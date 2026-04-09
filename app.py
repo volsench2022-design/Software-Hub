@@ -34,7 +34,7 @@ PROGRAMS = [
         "version":"1",
         "icon": "",
         "screenshots": "images/screenshots/emptyfolderhunter.png",
-        "file_name": "downloads/emptyfilehunter.py.exe",
+        "file_name": "downloads/emptyfilehunter.exe",
         "author": STUDENT_NAME,
     },
     {
@@ -47,7 +47,7 @@ PROGRAMS = [
         "version" "1",
         "icon": "",
         "screenshots": "images/screenshots/filedrop.png",
-        "file_name": "downloads/filedrop.py.exe",
+        "file_name": "downloads/filedrop.exe",
         "author": STUDENT_NAME,
     },
     {
@@ -60,9 +60,31 @@ PROGRAMS = [
         "version": "1",
         "icon": "",
         "screenshots": "images/screenshots/imageconvertor.png",
-        "file_name": "downloads/image-converter.py.exe",
+        "file_name": "downloads/image-converter.exe",
+        "author": STUDENT_NAME
+    {,
+        "id": 5,
+        "slug": "privacy-shield",
+        "title": "Privacy Shild",
+        "description": "With this app you can blur your screend wille you are awy from you computer so no one will see whats there",
+        "long_description": "An app where you can chouse you hot key to blur of unblur your screen so no one will see what you have in your computer",
+        "category": "tools",
+        "version": "1",
+        "icon": "",
+        "screenshots": "iamges/screenshots/privacyshield.png",
+        "file_name": "downloads/Privacyshield.exe",
+        "author": STUDENT_NAME,
     },
     {
-        
-    }
+        "id": 6,
+        "slug": "system-meneger",
+        "title": "System Meneger",
+        "description": "An app that help you to monitor the system ",
+        "long_description": "An that help you to monitor every proces that is running on you computer and see how hard your system works",
+        "version": "1",
+        "icon": "",
+        "screenshots": "images/screenshots/systemmaneger.png",
+        "file_name": "downloads/systemmaneger.exe"
+        "author" STUDENT_NAME,
+    },
 ]
