@@ -24,8 +24,6 @@ PROGRAMS = [
         "file_name": "downloads/autocliker.exe",
         "author": STUDENT_NAME,
     },
-]
-[
     {
         "id": 2,
         "slug": "empty-folder-hunter",
@@ -36,11 +34,9 @@ PROGRAMS = [
         "version":"1",
         "icon": "",
         "screenshots": "images/screenshots/emptyfolderhunter.png",
-        "file_name": "downloads/emptyfilehunter.py.exe"
+        "file_name": "downloads/emptyfilehunter.py.exe",
         "author": STUDENT_NAME,
-    }
-]
-[
+    },
     {
         "id": 3,
         "slug": "file-drop",
@@ -49,9 +45,24 @@ PROGRAMS = [
         "long_description": "In this app you scan an qar code and you will be abel to transfer data from pc to phone 'but you two devices need to be conected to the same wifi' and you can dounloud everything from the computer pictures files documentsd",
         "category": "tools",
         "version" "1",
-        "icon": ""
+        "icon": "",
         "screenshots": "images/screenshots/filedrop.png",
-        "file_name": "downloads/filedrop.png",
+        "file_name": "downloads/filedrop.py.exe",
         "author": STUDENT_NAME,
+    },
+    {
+        "id": 4,
+        "slug": "image-convertor",
+        "title": "Image Convertor",
+        "description": "An app that help you conwert image to specific format you need",
+        "long_description": "An app where you can chouse an picture you need adn convert in to the other format adn edit its sithe quoliti",
+        "category": "tools",
+        "version": "1",
+        "icon": "",
+        "screenshots": "images/screenshots/imageconvertor.png",
+        "file_name": "downloads/image-converter.py.exe",
+    },
+    {
+        
     }
 ]
