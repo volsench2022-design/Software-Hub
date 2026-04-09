@@ -19,9 +19,24 @@ PROGRAMS = [
         "long_description": "An simple auto cliker were you can edit how it will work and adapt it for your tasks",
         "category": "tools",
         "version": "1.4",
-        "icon": "mageis/icons/pixel-painter.svg",
+        "icon": "",
         "screenshot": "images/screenshots/autocliker.png",
         "file_name": "downloads/autocliker.exe",
         "author": STUDENT_NAME,
     },
+]
+[
+    {
+        "id": 2,
+        "slug": "empty-folder-hunter",
+        "title": "Empty folder hunter",
+        "description": "An app that finds and empty folders in your computer and it helps you to delite them",
+        "long_description": "An app that serches for empty folders and finds how many are in your conputer adn asks you if you wana to delite them ",
+        "category": "tools",
+        "version":"1",
+        "icon": "",
+        "screemshot": "images/screenshots/emptyfolderhunter.png",
+        "file_name": "downloads/emptyfilehunter.py.exe"
+        "autor": STUDENT_NAME,
+    }
 ]
