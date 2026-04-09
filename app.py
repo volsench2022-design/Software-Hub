@@ -20,7 +20,7 @@ PROGRAMS = [
         "category": "tools",
         "version": "1.4",
         "icon": "",
-        "screenshot": "images/screenshots/autocliker.png",
+        "screenshots": "images/screenshots/autocliker.png",
         "file_name": "downloads/autocliker.exe",
         "author": STUDENT_NAME,
     },
@@ -35,8 +35,23 @@ PROGRAMS = [
         "category": "tools",
         "version":"1",
         "icon": "",
-        "screemshot": "images/screenshots/emptyfolderhunter.png",
+        "screenshots": "images/screenshots/emptyfolderhunter.png",
         "file_name": "downloads/emptyfilehunter.py.exe"
-        "autor": STUDENT_NAME,
+        "author": STUDENT_NAME,
+    }
+]
+[
+    {
+        "id": 3,
+        "slug": "file-drop",
+        "title": "File Drop"
+        "description": "An app that helps you to transfer data from pc to the phone files photos everything",
+        "long_description": "In this app you scan an qar code and you will be abel to transfer data from pc to phone 'but you two devices need to be conected to the same wifi' and you can dounloud everything from the computer pictures files documentsd",
+        "category": "tools",
+        "version" "1",
+        "icon": ""
+        "screenshots": "images/screenshots/filedrop.png",
+        "file_name": "downloads/filedrop.png",
+        "author": STUDENT_NAME,
     }
 ]
