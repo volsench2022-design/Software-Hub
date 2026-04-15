@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Software Hub{% endblock %}</title>
+    <meta name="description" content="Software Hub - персональний сайт з програмами одного учня на Flask.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="page-shell"></div>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="{{ url_for('home') }}">
+                <span class="brand-mark">SH</span>
+                <span>
+                    <strong>Software Hub</strong>
+                    <small>Персональний каталог програм</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" data-nav-menu>
+                <a href="{{ url_for('home') }}">Головна</a>
+                <a href="{{ url_for('programs_list') }}">Програми</a>
+                <a href="{{ url_for('about') }}">Про автора</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Software Hub</h3>
+                <p>Персональний Flask-сайт, де один учень може зібрати всі свої desktop-програми в одному місці.</p>
+            </div>
+            <div>
+                <h4>Швидкі посилання</h4>
+                <a href="{{ url_for('home') }}">Головна</a>
+                <a href="{{ url_for('programs_list') }}">Каталог</a>
+                <a href="{{ url_for('about') }}">Про автора</a>
+            </div>
+            <div>
+                <h4>Для автора</h4>
+                <p>Додавай свої .exe файли в папку <code>static/downloads</code> і оновлюй список у
+                    <code>app.py</code>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="download-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" aria-label="Закрити" data-close-modal>×</button>
+            <p class="modal-kicker">Підтвердження</p>
+            <h2 id="modal-title">Завантаження програми</h2>
+            <p id="modal-description">Ви збираєтесь завантажити файл.</p>
+            <a id="modal-download-link" class="button button-primary" href="#">Почати завантаження</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
