@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Software Hub | Каталог{% endblock %}
+
+{% block content %}
+<section class="section page-intro">
+    <div class="container narrow">
+        <p class="section-kicker">Каталог</p>
+        <h1>Список моїх програм</h1>
+        <p>Тут зібрані всі мої застосунки, які можна переглянути, красиво презентувати та підготувати до скачування.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container cards-grid">
+        {% for program in programs %}
+        <article class="program-card">
+            <div class="program-card-top">
+                <img src="{{ url_for('static', filename=program.icon) }}" alt="Іконка {{ program.title }}">
+                <span class="tag">{{ program.category }}</span>
+            </div>
+            <h3>{{ program.title }}</h3>
+            <p>{{ program.description }}</p>
+            <div class="card-meta">
+                <span>Версія {{ program.version }}</span>
+                <span>{{ program.author }}</span>
+            </div>
+            <div class="card-actions">
+                <a class="button button-secondary" href="{{ url_for('program_detail', slug=program.slug) }}">Сторінка
+                    програми</a>
+                <button class="button button-primary" type="button" data-download-button
+                    data-program-title="{{ program.title }}"
+                    data-download-url="{{ url_for('download_program', slug=program.slug) }}">
+                    Завантажити
+                </button>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

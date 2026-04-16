@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Software Hub | {{ program.title }}{% endblock %}
+
+{% block content %}
+<section class="section page-intro">
+    <div class="container detail-layout">
+        <div class="detail-card">
+            <div class="detail-content">
+                <div class="detail-heading">
+                    <img class="detail-icon" src="{{ url_for('static', filename=program.icon) }}"
+                        alt="Іконка {{ program.title }}">
+                    <div>
+                        <p class="section-kicker">{{ program.category }}</p>
+                        <h1>{{ program.title }}</h1>
+                    </div>
+                </div>
+
+                <p class="detail-description">{{ program.long_description }}</p>
+
+                <div class="detail-meta">
+                    <span>Версія: {{ program.version }}</span>
+                    <span>Автор: {{ program.author }}</span>
+                    <span>Файл: {{ program.file_name }}</span>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="button button-primary" type="button" data-download-button
+                        data-program-title="{{ program.title }}"
+                        data-download-url="{{ url_for('download_program', slug=program.slug) }}">
+                        Завантажити .exe
+                    </button>
+                    <a class="button button-secondary" href="{{ url_for('programs_list') }}">Назад до каталогу</a>
+                </div>
+            </div>
+
+            <div class="detail-preview">
+                <p class="preview-label">Скріншот програми</p>
+                <div class="screenshot-frame">
+                    <img src="{{ url_for('static', filename=program.screenshot) }}"
+                        alt="Скріншот програми {{ program.title }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

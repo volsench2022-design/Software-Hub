@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Software Hub | Про автора{% endblock %}
+
+{% block content %}
+<section class="section page-intro">
+    <div class="container about-box about-layout">
+        <div class="about-photo-column">
+            <p class="section-kicker">Про автора</p>
+            <div class="author-photo-frame">
+                <img src="{{ url_for('static', filename='images/authors/illia singem.jpg') }}" alt="Фото автора">
+            </div>
+            <p class="author-caption">Illia Senchyshyn.</p>
+        </div>
+
+        <div class="about-content-column">
+            <h1>Мій сайт-портфоліо для desktop-програм</h1>
+            <p>
+                Цей сайт створений як персональне портфоліо, де я можу зібрати свої програми в одному місці,
+                показати їх опис, скріншоти, версії та дати можливість іншим завантажити мої проєкти.
+            </p>
+            <p>
+                Я можу додавати нові програми в список у <code>app.py</code>, оформлювати окремі сторінки,
+                змінювати стилі та поступово розширювати цей сайт як власну презентацію навичок.
+            </p>
+
+            <div class="author-socials">
+                <p class="preview-label">Соціальні мережі</p>
+                <div class="social-links-grid">
+                    <a class="social-link" href="https://t.me/loliko288">Telegram</a>
+                    <a class="social-link" href="i dont have an Instagram account">Instagram</a>
+                    <a class="social-link" href="https://github.com/volsench2022-design">GitHub</a>
+                    <a class="social-link" href="i dont have a YouTube channel">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
